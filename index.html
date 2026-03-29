@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Make your crossword</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <header class="hdr">
+        <div class="header-logo">CrosswordMaker</div>
+        <div class="info">
+            <a href="info.html" class="header-info-btn" title="Справка">
+                <svg xmlns="http://www.w3.org" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <line x1="12" y1="16" x2="12" y2="12"></line>
+                        <line x1="12" y1="8" x2="12.01" y2="8"></line>
+                    </svg>
+            </a>
+        </div>
+    </header>
+    <div class="parent">
+        <div class="table">
+            <div class="table-in">
+                <div class="viewport">
+                    <div id="grid" class="crossword-grid"></div>
+                </div>
+            </div>
+        </div>
+        <div class="buttons-tools">
+            <div class="buttons-tools-child">
+                <button class="icon-button" onclick="activateCell()" onmousedown="event.preventDefault()">
+                <svg xmlns="http://www.w3.org" class="icon" viewBox="0 0 20 20" fill="currentColor">
+                    <path d="M13.586 3.586a2 2 0 112.828 2.828l-.793.793-2.828-2.828.793-.793zM11.379 5.793L3 14.172V17h2.828l8.38-8.379-2.83-2.828z" />
+                </svg>
+                <span class="label">Выделить</span>
+            </button>
+                <button class="icon-button" onclick="deactivateCell()" onmousedown="event.preventDefault()">
+
+                <svg xmlns="http://www.w3.org" class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M20 20H7L3 16C2 15 2 13 3 12L13 2L22 11L20 20Z" />
+                    <path d="M17 17L7 7" />
+                </svg>
+                <span class="label">Очистить</span>
+            </button>
+            </div>
+        </div>
+    </div>
+    <div class="parent-bottom">
+        <div class="button-export">
+            <header class="header-section">
+                <h3 class="main-title">Экспорт</h3>
+                <div class="button-div">
+                    <button class="export-button" onclick="exportToJPG()">Экспорт</button>
+                </div>
+            </header>
+        </div>
+        <div class="number-nav">
+            <header class="header-section">
+                <h3 class="main-title">Укажите номер вопроса</h3>
+                <div class="buttons-number">
+                    <nav class="controls-bar" id="button-container">
+                    </nav>
+                </div>
+            </header>
+        </div>
+    </div>
+    <footer class="game-footer">
+        <div class="footer-content">
+            <div class="asd">
+                <p>Эл. почта: <a href="fivaofficialmail@gmail.com">fivaofficialmail@gmail.com</a> </p>
+                <p>FIva, 2026</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
